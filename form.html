@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" name="RegistrationForm"  style="font-family: Arial, Helvetica, sans-serif;">
+    <fieldset style="border-color: dodgerblue; position: relative;">
+    <p style="background-color: lightblue; position: absolute; top: 0px; margin: 0; left: 0; right: 0; font-weight: bold; padding-left: 4px;">Individual Registration</p>
+    <p style="color: red; font-size: medium; margin-bottom: 0; margin-top: 22px;" >*mandatory.</p>
+    <p style="background-color: lightblue; margin-top: 0;">GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION<br>
+        Please use a valid E-Mail ID and mobile number in registration.
+    </p>
+    <div style="margin-bottom: 4px;">
+    <label for="UserID" style="display: inline-block; width: 400px;">User ID<span style="color: red;">*</span></label>
+    <input type="text" id="UserID" name="UserID" value="TEST" style="font-weight: bold; border-color: lightblue; background: linear-gradient(to bottom , lightblue, white);" required/>
+    <a href="#" style="text-decoration: underline; font-size: 14px; color: dodgerblue ; border-color:lightblue;">Check Availability</a>
+    </div>
+
+    <label for="password" style="display: inline-block; width: 400px; ">Password<span style="color: red;">*</span></label>
+    <div style="display: inline-block; margin: 0;">
+    <div style="font-size: 12px;">Between 3 to 10 character. Only letter number and underscore are allowed.</div>
+    <input type="password" id="password" name="password" style="background: linear-gradient(to bottom , lightblue, white); border-color: lightblue;" value="abcd123456" required/></div>
+
+    <div style="margin-bottom: 10px;">
+    <label for="conpassword" style="display: inline-block; width: 400px;">Confirm Password<span style="color: red;">*</span></label>
+    <div style="display: inline-block; margin: 0;">
+    <div style="font-size: 12px;">Min 8 character and max 15 character. Password must contain at least one small & one capital alphabet and numeric digit.</div>
+    <input type="password" id="conpassword" name="conpassword" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" value="abcd123456" required/></div>
+    </div>
+
+    <p style="color: royalblue; font-size: 15px; margin-bottom: 2px;">If you forget your password, we will identify you with this information</p>
+    <div style="display: inline-block; margin-bottom: 5px;">
+    <label for="Security_ques" style="display: inline-block; width: 400px;">Security Question<span style="color: red;">*</span></label>
+    <select name="Security_ques" id="Security" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="pet">What is your pet name?</option>
+        <option value="food">What is your favourite food?</option>
+        <option value="color">What is your favourite color?</option>
+        <option value="movie">What is your favourite movie?</option>
+    </select>
+    </div>
+    <br>
+     <label for="Security_ans" style="display: inline-block; width: 400px;">Security Answer<span style="color: red;">*</span></label>
+     <input type="password" id="Security_ans" name="Security_ans" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/>
+
+    <br>
+    <div style="display: inline-block; margin-bottom: 5px; margin-top: 5px;">
+    <label for="Language" style="display: inline-block; width: 400px;">Preferred Language<span style="color: red;">*</span></label>
+    <select name="Language" id="Language" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue; font-weight: bold;">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Tamil">Tamil</option>
+    </select>
+    </div>
+
+    <p style="background-color: lightblue; margin-top: 2px;">Personal Details</p>
+
+    <div style="margin-bottom: 6px;">
+    <label for="fname" style="display: inline-block; width: 400px;">First Name<span style="color: red;">*</span></label>
+    <input type="text" id="fname" name="fname" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+    
+    <div style="margin-bottom: 6px;">
+    <label for="mname" style="display: inline-block; width: 400px;">Middle Name</label>
+    <input type="text" id="mname" name="mname" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;"/>(Optional)</div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="lname" style="display: inline-block; width: 400px;">Last Name<span style="color: red;">*</span></label>
+    <input type="text" id="lname" name="lname" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label style="display: inline-block; width: 400px;">Gender<span style="color: red;">*</span></label>
+    <input type="radio" style="accent-color: black;" id="Male" name="gender" value="Male" required checked/>
+    <label for="Male">Male</label>
+    <input type="radio" style="accent-color: black;" id="Female" name="gender" value="Female"/>
+    <label for="Female">Female</label>
+    </div>
+    
+    <div style="margin-bottom: 6px;">
+    <label style="display: inline-block; width: 400px;">Marital Status<span style="color: red;">*</span></label>
+    <input type="radio" v style="accent-color: black;" id="Married" name="marital" value="Married" required/>
+    <label for="Married">Married</label>
+    <input type="radio" style="accent-color: black;" style="accent-color: black;" id="Unmarried" name="marital" value="Unmarried" checked/>
+    <label for="Unmarried">Unmarried</label>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="dob" style="display: inline-block; width: 400px;">Date Of Birth<span style="color: red;">*</span></label>
+    <input type="date" id="dob" name="dob" value="1998-01-01" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="occupation" style="display: inline-block; width: 400px;">Occupation<span style="color: red;">*</span></label>
+    <select name="occupation" id="occupation" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="public">Public</option>
+        <option value="private">Private</option>
+        <option value="business">Business</option>
+    </select>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="adhaar" style="display: inline-block; width: 400px;">Adhaar Card No</label>
+    <input type="text" id="adhaar" name="adhaar" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;"/>(Optional)</div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="pan" style="display: inline-block; width: 400px;">PAN Card</label>
+    <input type="text" id="pan" name="pan" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;"/>(Optional)</div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="email" style="display: inline-block; width: 400px;">Email<span style="color: red;">*</span></label>
+    <input type="email" id="email" name="email" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="mobile" style="display: inline-block; width: 400px;">Mobile<span style="color: red;">*</span></label>
+    +91<input type="number" id="mobile" name="mobile" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="nationality" style="display: inline-block; width: 400px;">Nationality<span style="color: red;">*</span></label>
+    <select name="nationality" id="nationality" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="China">China</option>
+        <option value="Finland">Finland</option>
+    </select>
+    </div>
+
+    <p style="background-color: lightblue; margin-top: 2px; margin-bottom: 9px;">Residential Address</p>
+
+    <div style="margin-bottom: 6px;">
+    <label for="address1" style="display: inline-block; width: 400px;">Flat/Door/Block No.<span style="color: red;">*</span></label>
+    <input type="text" id="address1" name="address1" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="address2" style="display: inline-block; width: 400px;">Street/Lane</label>
+    <input type="text" id="address2" name="address2" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;"/>(Optional)</div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="address3" style="display: inline-block; width: 400px;">Area/Locality</label>
+    <input type="text" id="address3" name="address3" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;"/>(Optional)</div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="country" style="display: inline-block; width: 400px;">Country<span style="color: red;">*</span></label>
+    <select name="country" id="country" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="India">India</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="China">China</option>
+        <option value="Finland">Finland</option>
+    </select>
+    </div>  
+
+    <div style="margin-bottom: 6px;">
+    <label for="pincode" style="display: inline-block; width: 400px;">pin code<span style="color: red;">*</span></label>
+    <input type="text" id="pincode" name="pincode" value="110055" style="font-weight: bold; background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="state" style="display: inline-block; width: 400px;">State<span style="color: red;">*</span></label>
+    <input type="text" id="state" name="state" value="DELHI" style="color: lightblue; background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label for="city" style="display: inline-block; width: 400px;">City/Town<span style="color: red;">*</span></label>
+    <select name="city" id="city" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="Central Delhi">Central Delhi</option>
+        <option value="Begum Pur">Begum Pur</option>
+        <option value="Deoli">Deoli</option>
+        <option value="Gharoli">Gharoli</option>
+        <option value="Jaitpur">Jaitpur</option>
+        <option value="Tigri">Tigri</option>
+    </select>
+    </div>  
+
+    <div style="margin-bottom: 6px;">
+    <label for="PO" style="display: inline-block; width: 400px;">Post Office<span style="color: red;">*</span></label>
+    <select name="PO" id="PO" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;">
+        <option value="Pahar Ganj S.O">Pahar Ganj S.O</option>
+        <option value="New Delhi P.O">New Delhi P.O</option>
+        <option value="Sarojini Nagar P.O">Sarojini Nagar P.O</option>
+        <option value="CVD P.O">CVD. P.O</option>
+        <option value="Janpath P.O">Janpath P.O</option>
+        <option value="North Avenue P.O">North Avenue P.O</option>
+    </select>
+    </div>  
+
+    <div style="margin-bottom: 6px;">
+    <label for="phone" style="display: inline-block; width: 400px;">Phone<span style="color: red;">*</span></label>
+    <input type="number" id="phone" name="phone" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div>
+
+    <div style="margin-bottom: 6px;">
+    <label style="color:royalblue; display: inline-block; width: 400px;">Copy Residence to Office Address</label>
+    <input type="radio" style="accent-color: black;" id="yes" name="copy" value="Yes" checked>
+    <label for="yes">Yes</label>
+    <input type="radio" style="accent-color: black;" id="no" name="copy" value="No"/>
+    <label for="no">No</label>
+    </div>
+
+    <div style="margin-bottom: 10px;">
+    <div style="font-size: 28px; font-weight: bold; display: inline-block; padding-left: 300px;margin-bottom: 4px; letter-spacing: 3px;">YA<span style="letter-spacing:0px ;">D9K</span></div><br>
+    <label for="code" style="display: inline-block; width: 290px;">Type code shown</label>
+    <div style="display: inline-block; margin: 0;">
+    <div style="font-size: 12px; color: royalblue;">refresh</div>
+    <input type="text" id="code" name="code" style="background: linear-gradient(to bottom , lightblue, white); border-color:lightblue;" required/></div><br>
+    <div style="font-size: 12px; display: inline-block; padding-left: 294px;">Captcha letters are case sensitive and to be entered in Upper Case only</div>
+    </div>
+
+    <p style="background-color: lightblue; margin-top: 2px; margin-bottom: 2px; color:darkgreen;">Subscription to IRCTC New letters/Promotions/IRCTC SBI Card through email/SMS</p>
+
+    <div style="margin-bottom: 6px;">
+    <label style="color:royalblue; display: inline-block; width: 1000px;">IRCTC Newsletters</label>
+    <input type="radio" style="accent-color: black;" id="yes1" name="irctc" value="Yes" checked>
+    <label for="yes1">Yes</label>
+    <input type="radio" style="accent-color: black;" id="no1" name="irctc" value="No"/>
+    <label for="no1">No</label>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label style="color:royalblue; display: inline-block; width: 1000px;">Commercial Promotions</label>
+    <input type="radio" style="accent-color: black;" id="yes2" name="promos" value="Yes" checked>
+    <label for="yes2">Yes</label>
+    <input type="radio" style="accent-color: black;" id="no2" name="promos" value="No"/>
+    <label for="no2">No</label>
+    </div>
+
+    <div style="margin-bottom: 6px;">
+    <label style="color:royalblue; display: inline-block; width: 1000px;">Please inform me about IRCTC SBI Card through phone*</label>
+    <input type="radio" style="accent-color: black;" id="yes3" name="inform" value="Yes" required/>
+    <label for="yes3">Yes</label>
+    <input type="radio" style="accent-color: black;" id="no3" name="inform" value="No" checked/>
+    <label for="no3">No</label>
+    </div>
+
+    <input type="submit" style="color: royalblue; display: inline-block; width: 100%; border: none; font-size: 18px; background-color: lightblue; font-weight:550" value="Submit Registration Form>>>">
+
+    </fieldset>
+    </form>
+</body>
