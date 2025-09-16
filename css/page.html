@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+    
+    <style>
+        #banner{
+            width: 100%;
+            height: 220px;
+            border: 1px solid;
+            text-align: right;
+            padding-right: 140px;
+            padding-top: 20px;
+            margin-bottom: 8px;
+            box-sizing: border-box;
+            background-color: #B7D72A;
+            
+        }
+        
+        .topbar{
+          background-color: #EAE6CB;
+          display: flex;
+          flex-direction: row;
+          margin-right: 9px;
+          margin-left: 9px;
+          justify-content: space-around;
+          background: #f4f4f4;
+          border: inset;
+          border-right: outset;
+          padding-top: 8px;
+          padding-bottom: 5px;
+          height: 28px;
+ 
+        }
+        .mainpart{
+          background-color: #e5e5f7;
+          background-color: #FAF1D0;
+          padding-top: 9px;
+          border: 1px solid black;
+          height: max-content;
+          width: 100%;
+        }
+        .maincontent{
+          display: flex;
+          flex-direction: row;
+          align-items: stretch;
+          border-left:outset;
+          margin: 26px 9px;
+        }
+        .sidebar{
+          background-color: #F0E8C3;
+          display: flex;
+          flex-direction: column;
+          flex-shrink: 0;
+          border-right: inset;
+          width: 300px;
+        }
+        .list{
+          list-style: none;
+        }
+        .list li {
+        display: flex;       
+        align-items: center;
+        gap: 10px;          
+        }
+        .inner{
+          padding: 0px 10px;
+        }
+        .barheadings{
+          background-color: #D2D35E;
+          margin: 0;
+          font-size: 25px;
+          padding: 9px 0px 9px 0px;
+          
+        }
+        .content{
+          display: flex;
+          flex-direction: column;
+          border-left: outset;
+          margin-left: 10px;
+          padding: 0px 25px 30px 18px;
+          }
+        .bottom{
+          display: flex;
+          flex-direction: row;
+        }
+        .subscription{
+          
+          border-right: outset;
+          padding-right: 30px;
+        }
+        .services{
+          padding-left: 20px;
+          
+        }
+        .read{
+          padding: 10px;
+          font-weight: bold;
+          border: outset;
+          border-top: inset;
+          background-color: #BEDD27;
+        }
+        .foot{
+          padding: 6px;
+          margin: 10px;
+          text-align: center;
+          border: outset;
+          background-color:#CBDE50;
+        }
+    </style>
+
+</head>
+<body>
+  <div>
+    <section id="banner">
+    <h1>Enter Site Title</h1>
+    <p>Enter Site Slogan</p>
+    </section>
+    
+  <section class="mainpart">
+
+    <nav class="topbar">
+      <a href="#">Home</a>
+      <a href="#">New Page</a>
+      <a href="#">New Page 2</a>
+      <a href="#">New Page 3</a>
+      <a href="#">New Page 4</a>
+      <a href="#">New Page 5</a>
+    </nav>
+
+  <!-- MAIN CONTENT WRAPPER -->
+  <section class="maincontent">
+    
+    <!-- LEFT SIDEBAR -->
+    <section class="sidebar">
+      <section class="menu">
+        <h2 class="barheadings"><i class="fa-solid fa-arrow-right" style="padding:0px 10px;"></i>Main Menu</h2>
+        <ul class="list">
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 1</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 2</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 3</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 4</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 5</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 6</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 7</a></li>
+          <li><i class="fa-solid fa-table-list"></i><a href="#">Menu Item 8</a></li>
+        </ul>
+      </section>
+
+      <section class="block">
+       <h2 class="barheadings"> <i class="fa-solid fa-arrow-right" style="padding:0px 10px;"></i>Block</h2>
+        <div class="inner">
+        <p>Enter Block content here...</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Aenean commodo.</p>
+        </div>
+      </section>
+    </section>
+
+    <!-- MAIN SECTION -->
+    <section class="content">
+      <div class="gallery">
+        <h2>Gallery</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <div class="subscription">
+          <h2>Subscription</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+          <button class="read">Read more</button>
+        </div>
+
+        <div class="services">
+          <h2>Other Services</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+          <button class="read">Read more</button>
+        </div>
+      </div>
+
+  </section>  
+   
+  </section>
+   <div class="foot">
+    <p>Copyright © 2014.</p>
+  </div>
+  </section>
+  
+
+
+</body>
+</html>
